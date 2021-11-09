@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <p>hello</p>
+      <p>hello world</p>
       <form action="http://localhost:8000/pdf" method="POST">
         <input type='text' name='name' placeholder='Your name' />
         <textarea placeholder='Tell me about yourself' name='about'> </textarea>
