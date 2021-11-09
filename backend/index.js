@@ -18,7 +18,8 @@ server.post("/pdf", async ({ body: { name, about } }, res) => {
         });
     }).catch(console.error);
 
-    res.end(binaryData, "binary");
+    // res.end(binaryData, "binary");
+    // res.download("pdf")
 })
 
 server.listen(8000, () => console.log('Started server!'))
