@@ -6,7 +6,7 @@ function App() {
 	return (
 		<div className="App">
 			<p>BIG WORLD!</p>
-			<form action="http://localhost:8000/pdf" method="POST">
+			<form action="http://18.168.6.68:8000/pdf" method="POST">
 				<input type="text" name="name" placeholder="Your name" />
 				<textarea placeholder="Tell me about yourself" name="about">
 					{" "}
