@@ -8,14 +8,16 @@ git pull
 
 echo "Building frontend..."
 cd frontend
-nohup npm i; npm run build &>>./log &
-
+npm i
+npm run build
 
 echo "Running the backend (in the background)..."
 cd ../backend
-nohup npm i; node . &>>./log &
+npm i 
+nohup node . &>./log &
 
 
 echo "Running webhook (in the background)..."
 cd ..
-nohup npm i; node ./webhook &>>./log &
+npm i
+nohup node ./webhook &>./log &
