@@ -3,6 +3,9 @@
 echo "Killing currently running processes..."
 killall node
 
+echo "Using --lts version of node"
+nvm install --lts
+
 echo "Pulling latest code..."
 git pull
 
